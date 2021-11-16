@@ -1,0 +1,11 @@
+{
+  "name": "m-grid",
+  "version": "1.0.0",
+  "description": "adhoc arduinom driver",
+  "author": "m-onz",
+  "license": "MIT",
+  "dependencies": {
+    "osc": "^2.4.2",
+    "serialport": "^9.2.5"
+  }
+}
