@@ -1,2 +1,18 @@
-#N canvas 266 487 450 300 10;
-#X text 14 15 OSC receiver test;
+#N canvas 1251 97 535 468 10;
+#X obj 14 65 netreceive -u -b;
+#X obj 14 88 oscparse;
+#X obj 14 120 list trim;
+#X obj 14 41 initmess listen 9999 0.0.0.0;
+#X floatatom 82 198 5 0 0 0 - - -;
+#X obj 71 144 print;
+#X obj 119 200 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 14 15 m-grid;
+#X obj 14 169 unpack s s f;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 5 0;
+#X connect 2 0 8 0;
+#X connect 3 0 0 0;
+#X connect 8 2 4 0;
+#X connect 8 2 6 0;
